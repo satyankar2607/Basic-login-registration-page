@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>QUIZ'o'FEST</h2>
+
+<form action="/calc" method="post">{% csrf_token %}
+    <ol type='i'>
+        {% for i in message %}
+
+        <b> Q. <b>{{i.questions}}</b></b>
+        <li>{{i.opt1}}</li>
+        <input id="{{i.questions}}1" name="{{i.questions}}" type="radio">
+        <li>{{i.opt2}}</li>
+        <input id="{{i.questions}}2" name="{{i.questions}}" type="radio">
+        <li>{{i.opt3}}</li>
+        <input id="{{i.questions}}3" name="{{i.questions}}" type="radio">
+        <li>{{i.opt4}}</li>
+        <input id="{{i.questions}}4" name="{{i.questions}}" type="radio">
+        <hr>
+
+        {% endfor %}
+    </ol>
+    <button type = 'submit' >SUBMIT!</button>
+
+</form>
+
+</body>
+</html>

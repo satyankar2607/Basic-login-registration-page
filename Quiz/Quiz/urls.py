@@ -23,5 +23,11 @@ urlpatterns = [
     path('signup', views.signup, name='sigup'),
     path('login', views.login, name='login'),
     path('logch', views.logch, name='logch'),
+    path('adm', views.adm, name='adm'),
+    path('add', views.add, name='add'),
+    path('dele', views.dele, name='dele'),
+    path('showquestions', views.showquestions, name='showquestions'),
+    path('user', views.user, name='user'),
+    path('calc', views.calc, name='calc'),
 
 ]

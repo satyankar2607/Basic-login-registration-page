@@ -7,7 +7,7 @@
 <body>
 <h1>QUIZ'o'FEST</h1>
 
-(NEW USER)
+<p>(NEW USER)</p>
 
 <form action = '/signup' method = 'post'>{% csrf_token %}
     Email ID:
@@ -18,9 +18,11 @@
     <br>
 </form>
 </br></br>
-
-(Existing User)
-<h1><a href="/login">LOGIN!</a></h1>
-
+<h3>
+<nav>
+    (Existing User):
+    <b><a href="/login">LOGIN!</a></b>
+</nav>
+    </h3>
 </body>
 </html>

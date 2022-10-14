@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ADD Questions</h1>
+<form action="/add" method = "post" >{% csrf_token %}
+    Question:<input id="question" name="question" type="text"><br><br>
+    Opt 1: <input id="opt1" name="opt1" type="text"><br><br>
+    Opt 2: <input id="option2" name="opt2" 2ype="text"><br><br>
+    Opt 3: <input id="opt3" name="opt3" type="text"><br><br>
+    Opt 4: <input id="opt4" name="opt4" type="text"><br><br>
+    Answer: <input id="corr_opt" name="corr_opt" type="text">
+
+    <button type = 'submit' >ADD!</button>
+</form></br></br>
+
+<form action="/dele" method = "post">{% csrf_token %}
+    <input type = "text" name = "question" id ="question" placeholder="Question want to delete" >
+    <button type = 'submit' >DELETE!</button>
+</form></br></br>
+
+<button  type = 'submit'><a href="/showquestions">SHOW Questions!</a> </button>
+
+</body>
+</html>
